@@ -1,0 +1,271 @@
+$grid-columns: 12;
+
+$breakpoints: (
+    'xs': 375px,
+    's': 768px,
+    'm': 1024px,
+    'l': 1280px,
+    'xl': 1440px,
+);
+
+$sizes: (
+    'xxs': .125rem,
+    'xs': .25rem,
+    's': .5rem,
+    'm': 1rem,
+    'l': 1.5rem,
+    'xl': 2rem,
+    'xxl': 3rem,
+);
+
+:root {
+    --base-size: 16px;
+
+    --font-1: 'Inter', system-ui, sans-serif;
+    --font-2: 'The Seasons', system-ui, sans-serif;
+    --letter-spacing: 0;
+
+    // Font size
+    --font-size-xxs: .625rem;
+    --font-size-xs: .75rem;
+    --font-size-s: .875rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2.25rem;
+    --font-size-3xl: 2.75rem;
+
+    // Line heights
+    --line-height-s: 1.15;
+    --line-height-m: 1.3;
+    --line-height-l: 1.6;
+
+    // Layout sizing
+    --gutter: 1.25em;
+    --wrapper-width: 85rem; // 1360px
+    --wrapper-width-narrow: 44rem;
+
+    // Nav
+    --nav-border-radius: .5rem;
+    --nav-box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
+    --nav-height: 3.5em;
+    --nav-offset-x: .5rem;
+    --nav-offset-y: .5rem;
+
+    // Logo
+    --logo-height: 1.75em;
+
+    // Sections
+    --section-padding-y: 3rem;
+
+    // Media
+    --media-border-radius-s: .25rem;
+    --media-border-radius-m: .5rem;
+    --media-border-radius-l: 1rem;
+
+    // Colors
+    --color-1: oklch(65% 0.18 315);
+    --color-1-hover: oklch(60% 0.2 315);
+    --color-1-lch: 65% 0.18 315;
+    --color-1-tint: oklch(97.5% 0.05 315);
+    --color-1-tint-hover: oklch(95% 0.075 315);
+
+    --color-2: oklch(88% 0.06 246);
+    --color-2-hover: oklch(84% 0.08 246);
+    --color-2-lch: 88% 0.06 246;
+    --color-2-tint: oklch(97.5% 0.02 246);
+    --color-2-tint-hover: oklch(95% 0.035 246);
+
+    --color-bg: #FFF;
+    --color-bg-tint: oklch(97.5% 0.01 260);
+
+    --color-text: rgba(0, 0, 0, .75);
+    --color-text-accent: rgba(0, 0, 0, 1);
+    --color-text-hc: rgba(0, 0, 0, 1);
+    --color-text-lc: rgba(0, 0, 0, .5);
+
+    --color-link: rgba(0, 0, 0, .75);
+    --color-link-hover: rgba(0, 0, 0, 1);
+
+    --color-border: #E8E8E8;
+    --color-border-hc: #A9A9A9;
+    --color-border-lc: #EFEFEF;
+
+    --color-danger: #DD3300;
+    --color-success: #009900;
+
+    // Themes
+    --theme-1-color: #E6F3FC;
+    --theme-1-color-bg: #E6F3FC;
+    --theme-1-color-text: var(--color-text);
+    --theme-1-color-text-hc: var(--color-text-hc);
+    --theme-1-color-text-lc: var(--color-text-lc);
+
+    --theme-2-color: #F3ECFF;
+    --theme-2-color-bg: #F3ECFF;
+    --theme-2-color-text: var(--color-text);
+    --theme-2-color-text-hc: var(--color-text-hc);
+    --theme-2-color-text-lc: var(--color-text-lc);
+
+    --theme-3-color: #F9F6C6;
+    --theme-3-color-bg: #F9F6C6;
+    --theme-3-color-text: var(--color-text);
+    --theme-3-color-text-hc: var(--color-text-hc);
+    --theme-3-color-text-lc: var(--color-text-lc);
+
+    --theme-4-color: #F9F6F3;
+    --theme-4-color-bg: #F9F6F3;
+    --theme-4-color-text: var(--color-text);
+    --theme-4-color-text-hc: var(--color-text-hc);
+    --theme-4-color-text-lc: var(--color-text-lc);
+
+    --theme-inverted-color: rgb(255, 255, 255, .75);
+    --theme-inverted-color-bg: rgb(0, 0, 0);
+    --theme-inverted-color-text: rgb(255, 255, 255, .75);
+    --theme-inverted-color-text-hc: rgb(255, 255, 255);
+    --theme-inverted-color-text-lc: rgba(255, 255, 255, .5);
+
+    // Footer
+    --footer-color-bg: #000;
+    --footer-color-border: #333;
+    --footer-color-link: #CCC;
+    --footer-color-link-hover: #FFF;
+    --footer-color-text: #CCC;
+    --footer-color-text-hc: #BCE6FF;
+    --footer-color-text-lc: #FFF;
+
+    --footer-legal-color-bg: #bce6ff;
+    --footer-legal-color-text: #000;
+
+    --footer-logo-width: 10rem;
+
+    // Border radii
+    --border-radius-s: .25em;
+    --border-radius-m: .5em;
+    --border-radius-l: 1em;
+
+    // Box shadows
+    --box-shadow-m: 0 .5em .5em rgba(0, 0, 0, .05);
+
+    // H1
+    --h1-color: var(--color-text-hc);
+    --h1-font: var(--font-2);
+    --h1-letter-spacing: 0;
+    --h1-line-height: 1.25;
+    --h1-size: var(--font-size-3xl);
+    --h1-style: normal;
+    --h1-text-transform: none;
+    --h1-weight: 700;
+
+    // H2
+    --h2-color: var(--color-text-hc);
+    --h2-font: var(--font-2);
+    --h2-letter-spacing: 0;
+    --h2-line-height: var(--line-height-m);
+    --h2-size: var(--font-size-xxl);
+    --h2-style: normal;
+    --h2-text-transform: none;
+    --h2-weight: 700;
+
+    // H3
+    --h3-color: var(--color-text-hc);
+    --h3-font: var(--font-1);
+    --h3-letter-spacing: 0;
+    --h3-line-height: var(--line-height-m);
+    --h3-size: var(--font-size-l);
+    --h3-style: normal;
+    --h3-text-transform: none;
+    --h3-weight: 600;
+
+    // H4
+    --h4-color: var(--color-text-hc);
+    --h4-font: var(--font-1);
+    --h4-letter-spacing: 0;
+    --h4-line-height: var(--line-height-m);
+    --h4-size: var(--font-size-l);
+    --h4-style: normal;
+    --h4-text-transform: none;
+    --h4-weight: 600;
+
+    // H5
+    --h5-color: var(--color-text-hc);
+    --h5-font: var(--font-1);
+    --h5-letter-spacing: .05em;
+    --h5-line-height: var(--line-height-m);
+    --h5-size: var(--font-size-xs);
+    --h5-style: normal;
+    --h5-text-transform: uppercase;
+    --h5-weight: 600;
+
+    // Button
+    --btn-border-radius: 1.75em;
+    --btn-font-weight: 500;
+    --btn-height-s: 2.25em;
+    --btn-height: 2.75em;
+    --btn-height-l: 3.5em;
+
+    --btn-bg-color: transparent;
+    --btn-bg-color-hover: transparent;
+    --btn-border-color: rgba(0, 0, 0, .15);
+    --btn-border-color-hover: rgba(0, 0, 0, .25);
+    --btn-color: var(--color-text);
+    --btn-color-hover: var(--color-text-hc);
+
+    --btn-primary-bg-color: rgba(249, 246, 198, 1);
+    --btn-primary-bg-color-hover: rgba(246, 239, 153, 1);
+    --btn-primary-color: #000;
+    --btn-primary-color-hover: #000;
+    --btn-primary-border-color: transparent;
+    --btn-primary-border-color-hover: transparent;
+
+    --btn-inverted-bg-color: rgba(255, 255, 255, .15);
+    --btn-inverted-bg-color-hover: rgba(255, 255, 255, .25);
+    --btn-inverted-color: #FFF;
+    --btn-inverted-color-hover: #FFF;
+    --btn-inverted-border-color: transparent;
+    --btn-inverted-border-color-hover: transparent;
+
+    // Durations
+    --duration-s: 125ms;
+    --duration-m: 250ms;
+    --duration-l: 500ms;
+
+    // Breakpoints
+    @each $key, $value in $breakpoints {
+        --breakpoint-#{$key}: #{$value};
+    }
+
+    // Sizes
+    @each $key, $value in $sizes {
+        --size-#{$key}: #{$value};
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        // Font size
+        // --font-size-l: 1.25rem;
+        --font-size-xl: 1.75rem;
+        --font-size-xxl: 3rem;
+        --font-size-3xl: 4rem;
+
+        // Layout
+        --gutter: 3em;
+
+        // Sections
+        --section-padding-y: 5em;
+
+        // Nav
+        --nav-border-radius: 1rem;
+        --nav-box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .1);
+        --nav-height: 5rem;
+        --nav-offset-x: 1rem;
+        --nav-offset-y: 1rem;
+
+        // Logo
+        --logo-height: 2.25em;
+
+        // Footer
+        --footer-logo-width: 15rem;
+    }
+}

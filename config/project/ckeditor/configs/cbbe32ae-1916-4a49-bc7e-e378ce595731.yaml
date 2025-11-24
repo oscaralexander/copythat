@@ -1,0 +1,19 @@
+css: ".ck.ck-content {\r\n    font-size: 16px;\r\n    line-height: 1.5;\r\n}\r\n\r\n.ck.ck-content p.small {\r\n    font-size: .875em;\r\n}\r\n\r\n.ck.ck-content p.large {\r\n    font-size: 1.25em;\r\n}"
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+js: "return {\r\n  heading: {\r\n    options: [\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        model: 'paragraph',\r\n        title: 'Paragraph',\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphLarge',\r\n        title: 'Paragraph (Large)',\r\n        view: {\r\n          classes: [\r\n            'large',\r\n          ],\r\n          name: 'p',\r\n        },\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphSmall',\r\n        title: 'Paragraph (Small)',\r\n        view: {\r\n          classes: [\r\n            'small',\r\n          ],\r\n          name: 'p',\r\n        },\r\n      },\r\n    ],\r\n  },\r\n}"
+name: Simple
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - bulletedList
+  - numberedList
+  - createEntry

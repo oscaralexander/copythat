@@ -1,0 +1,12 @@
+{
+  "src/js/index.js": {
+    "file": "assets/app-DhuZncyJ.js",
+    "name": "app",
+    "src": "src/js/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-Duy4iys4.css"
+    ],
+    "integrity": "sha384-K9ibXwd4BGHhdPZc26pCAZUDDEcCz7iFWoS7XlMs+VxhspE9ynHoU/slu2hpOpV9"
+  }
+}

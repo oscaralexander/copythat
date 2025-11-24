@@ -1,0 +1,123 @@
+color: null
+description: null
+fieldLayouts:
+  b5fbfc2a-2b8e-4fab-8d7a-5877f38856aa:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:167d0246-13cb-48cd-94db-6927f4b685ee'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-07-21T08:11:12+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Author
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5acec4cd-7346-4259-9627-b6e5569fb772
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-21T08:26:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
+            handle: authorCompany
+            includeInCards: true
+            instructions: null
+            label: 'Author company'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 167d0246-13cb-48cd-94db-6927f4b685ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-21T08:25:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
+            handle: authorPosition
+            includeInCards: false
+            instructions: null
+            label: 'Author position'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3145e3db-5735-4534-af03-bf924cf49293
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-21T08:25:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6423142b-070e-40f3-a5bf-60ec6f619554 # Author image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 095c2b37-7811-41b7-8cf9-bbf6ff5e5bff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-21T08:26:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a7a8daf6-7f51-497e-87c8-1dfee48440fc # Textarea
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 626bc1f3-3dea-45cd-9413-78dd332d3b39
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 31e9e6c3-3c51-47c6-9691-be6ec59f539b
+        userCondition: null
+handle: testimonial
+hasTitleField: true
+icon: null
+name: Testimonial
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

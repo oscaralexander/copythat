@@ -1,0 +1,24 @@
+{% set image = block.image.one() %}
+
+<section class="section hero hero--{{ block.height ?? 'fit' }} hero--width-{{ block.textWidth }} u-theme-{{ block.theme }} js-equinox">
+    {% if image %}
+        <img alt="{{ image.title }}" src="{{ image.url }}" class="hero__backdrop">
+    {% endif %}
+    <div class="wrapper section__inner">
+        <div class="grid grid--gap-xl grid--middle l:grid--gap-xxl">
+            <div class="grid__col l:grid__col--span-{{ block.textWidth == '75' ? '8' : '6'}}">
+                <div class="hero__content stack stack--gap-xl">
+                    <div class="stack stack--gap-m">
+                        <h1 class="textSplit js-textSplit">{{ block.title }}</h1>
+                        <div class="hero__text richText">
+                            {{ block.text }}
+                        </div>
+                    </div>
+                    {% if block.ctas %}
+                        {% include '_partials/ctas' with { ctas: block.ctas } %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

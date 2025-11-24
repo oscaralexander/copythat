@@ -1,0 +1,113 @@
+columnSuffix: null
+handle: theme
+instructions: null
+name: 'Theme color'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Wit
+        -
+          - value
+          - '0'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#ffffff'
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Lichtblauw
+        -
+          - value
+          - '1'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f4f8fa'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lila
+        -
+          - value
+          - '2'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f3ecff'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lichtgeel
+        -
+          - value
+          - '3'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f9f6c6'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Zand
+        -
+          - value
+          - '4'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f9f6f3'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Zwart
+        -
+          - value
+          - inverted
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#000000'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
