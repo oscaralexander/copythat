@@ -3,6 +3,6 @@
     font-family: 'The Seasons';
     font-style: normal;
     font-weight: 700;
-    src: url('/assets/fonts/TheSeasons-Bold.woff') format('woff'),
-         url('/assets/fonts/TheSeasons-Bold.woff2') format('woff2');
+    src: url('@public/assets/fonts/TheSeasons-Bold.woff') format('woff'),
+         url('@public/assets/fonts/TheSeasons-Bold.woff2') format('woff2');
 }

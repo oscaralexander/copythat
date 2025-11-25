@@ -57,19 +57,19 @@
         }
 
         &--instagram {
-            mask-image: url('/assets/icons/instagram.svg');
+            mask-image: url('@public/assets/icons/instagram.svg');
         }
 
         &--linkedin {
-            mask-image: url('/assets/icons/linkedin.svg');
+            mask-image: url('@public/assets/icons/linkedin.svg');
         }
 
         &--whatsapp {
-            mask-image: url('/assets/icons/whatsapp.svg');
+            mask-image: url('@public/assets/icons/whatsapp.svg');
         }
 
         &--x {
-            mask-image: url('/assets/icons/x.svg');
+            mask-image: url('@public/assets/icons/x.svg');
         }
     }
 
