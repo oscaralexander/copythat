@@ -27,7 +27,7 @@ settings:
       __assoc__:
         -
           - label
-          - Tint
+          - Lichtblauw
         -
           - value
           - '1'
@@ -36,7 +36,58 @@ settings:
           - ''
         -
           - color
-          - '#ecf6f7'
+          - '#e6f3fc'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lila
+        -
+          - value
+          - '2'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f3ecff'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lichtgeel
+        -
+          - value
+          - '3'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f9f6c6'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Beige
+        -
+          - value
+          - '4'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#f9f6f3'
         -
           - default
           - ''
@@ -53,7 +104,7 @@ settings:
           - ''
         -
           - color
-          - '#1c4c60'
+          - '#000000'
         -
           - default
           - ''
