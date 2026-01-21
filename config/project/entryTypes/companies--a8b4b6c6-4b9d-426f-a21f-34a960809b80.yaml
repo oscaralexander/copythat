@@ -8,40 +8,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-07-15T07:17:12+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e4e6f418-47d5-4f88-89ef-8dfd8c5bdd3b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-07-25T09:38:09+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8b1217ba-840d-4b44-97e7-aaa81b276a22
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2025-07-15T08:40:24+00:00'
             editCondition: null
             elementCondition: null
@@ -108,11 +74,51 @@ fieldLayouts:
         name: Content
         uid: 9db19c2c-7c42-4850-8220-d2fd611cd0df
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-15T07:17:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4e6f418-47d5-4f88-89ef-8dfd8c5bdd3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-25T09:38:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b1217ba-840d-4b44-97e7-aaa81b276a22
+            userCondition: null
+            warning: null
+            width: 100
+        name: Styling
+        uid: 58060c53-74ec-499a-b98e-532e2f467fac
+        userCondition: null
 handle: companies
 hasTitleField: true
 icon: null
 name: Companies
-showSlugField: true
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

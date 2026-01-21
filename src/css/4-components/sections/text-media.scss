@@ -12,6 +12,7 @@
     &__picture {
         border-radius: var(--media-border-radius-m);
         display: block;
+        margin: auto;
         overflow: hidden;
         position: relative;
     }
@@ -58,6 +59,10 @@
 
         &__mediaCol {
             display: block;
+        }
+
+        &__picture {
+            max-height: 75vh;
         }
 
         &__body {

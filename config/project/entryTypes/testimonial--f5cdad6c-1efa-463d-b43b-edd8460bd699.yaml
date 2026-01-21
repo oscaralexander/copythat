@@ -4,11 +4,45 @@ fieldLayouts:
   b5fbfc2a-2b8e-4fab-8d7a-5877f38856aa:
     cardThumbAlignment: end
     cardView:
-      - 'layoutElement:167d0246-13cb-48cd-94db-6927f4b685ee'
+      - 'layoutElement:106a49c3-aa90-4c05-ad26-3ffcd0667da7'
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            dateAdded: '2025-12-22T09:53:00+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
+            handle: body
+            includeInCards: true
+            instructions: null
+            label: Body
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 106a49c3-aa90-4c05-ad26-3ffcd0667da7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-18T13:37:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
+            handle: pullQuote
+            includeInCards: false
+            instructions: null
+            label: 'Pull quote'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efbc946e-fb5f-4a6d-b0e7-a27cece1e457
+            userCondition: null
+            warning: null
+            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -29,7 +63,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            required: true
+            required: false
             size: null
             step: null
             tip: null
@@ -45,7 +79,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: authorCompany
-            includeInCards: true
+            includeInCards: false
             instructions: null
             label: 'Author company'
             providesThumbs: false
@@ -90,23 +124,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2025-07-21T08:26:58+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: a7a8daf6-7f51-497e-87c8-1dfee48440fc # Textarea
-            handle: text
-            includeInCards: false
-            instructions: null
-            label: Text
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 626bc1f3-3dea-45cd-9413-78dd332d3b39
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 31e9e6c3-3c51-47c6-9691-be6ec59f539b
         userCondition: null
@@ -114,7 +131,7 @@ handle: testimonial
 hasTitleField: true
 icon: null
 name: Testimonial
-showSlugField: true
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -87,46 +87,15 @@ $sizes: (
     --color-link: rgba(0, 0, 0, .75);
     --color-link-hover: rgba(0, 0, 0, 1);
 
-    --color-border: #E8E8E8;
-    --color-border-hc: #A9A9A9;
-    --color-border-lc: #EFEFEF;
+    --color-border: rgba(0, 0, 0, .15);
+    --color-border-hc: rgba(0, 0, 0, .3);
+    --color-border-lc: rgba(0, 0, 0, .1);
 
     --color-danger: #DD3300;
     --color-success: #009900;
 
-    // Themes
-    --theme-1-color: #E6F3FC;
-    --theme-1-color-bg: #E6F3FC;
-    --theme-1-color-text: var(--color-text);
-    --theme-1-color-text-hc: var(--color-text-hc);
-    --theme-1-color-text-lc: var(--color-text-lc);
-
-    --theme-2-color: #F3ECFF;
-    --theme-2-color-bg: #F3ECFF;
-    --theme-2-color-text: var(--color-text);
-    --theme-2-color-text-hc: var(--color-text-hc);
-    --theme-2-color-text-lc: var(--color-text-lc);
-
-    --theme-3-color: #F9F6C6;
-    --theme-3-color-bg: #F9F6C6;
-    --theme-3-color-text: var(--color-text);
-    --theme-3-color-text-hc: var(--color-text-hc);
-    --theme-3-color-text-lc: var(--color-text-lc);
-
-    --theme-4-color: #F9F6F3;
-    --theme-4-color-bg: #F9F6F3;
-    --theme-4-color-text: var(--color-text);
-    --theme-4-color-text-hc: var(--color-text-hc);
-    --theme-4-color-text-lc: var(--color-text-lc);
-
-    --theme-inverted-color: rgb(255, 255, 255, .75);
-    --theme-inverted-color-bg: rgb(0, 0, 0);
-    --theme-inverted-color-text: rgb(255, 255, 255, .75);
-    --theme-inverted-color-text-hc: rgb(255, 255, 255);
-    --theme-inverted-color-text-lc: rgba(255, 255, 255, .5);
-
     // Footer
-    --footer-color-bg: #000;
+    --footer-color-bg: rgb(22, 12, 44);
     --footer-color-border: #333;
     --footer-color-link: #CCC;
     --footer-color-link-hover: #FFF;

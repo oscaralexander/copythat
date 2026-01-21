@@ -14,13 +14,17 @@
         border: 1px solid var(--color-border);
     }
 
+    .u-theme-inverted & {
+        background-color: var(--color-bg-tint);
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 
-    &__text {
+    &__body {
         line-height: var(--line-height-l);
     }
 
@@ -63,9 +67,7 @@
             padding: var(--size-xl);
         }
 
-        &__text {
-            line-height: var(--line-height-l);
-    
+        &__body {
             .l\:grid__col--span-6 & {
                 font-size: var(--font-size-l);
             }

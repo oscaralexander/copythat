@@ -1,5 +1,5 @@
 columnSuffix: null
-handle: fullWidthSection
+handle: isFullWidth
 instructions: 'Toggle on to make the section background color span the entire screen, and images span half.'
 name: 'Full-width section?'
 searchable: false

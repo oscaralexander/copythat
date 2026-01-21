@@ -5,7 +5,7 @@
 {% extends "_layout" %}
 
 {% block content %}
-    {% for block in entry.blocks.all() %}
-        {% include "_blocks/" ~ block.type with { block: block } %}
+    {% for section in entry.sections.all() %}
+        {% include "_sections/" ~ section.type with { section: section } %}
     {% endfor %}
 {% endblock %}

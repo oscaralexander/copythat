@@ -26,19 +26,21 @@
 /**
  * 4. Components
  */
-@use '@css/4-components/blocks/blog-item';
-@use '@css/4-components/blocks/card';
-@use '@css/4-components/blocks/column';
-@use '@css/4-components/blocks/companies';
-@use '@css/4-components/blocks/company';
-@use '@css/4-components/blocks/cta';
-@use '@css/4-components/blocks/hero';
-@use '@css/4-components/blocks/person';
-@use '@css/4-components/blocks/product';
-@use '@css/4-components/blocks/stat';
-@use '@css/4-components/blocks/stats';
-@use '@css/4-components/blocks/testimonial';
-@use '@css/4-components/blocks/text-media';
+@use '@css/4-components/sections/accordion-item';
+@use '@css/4-components/sections/blog-item';
+@use '@css/4-components/sections/card';
+@use '@css/4-components/sections/column';
+@use '@css/4-components/sections/companies';
+@use '@css/4-components/sections/company';
+@use '@css/4-components/sections/cta';
+@use '@css/4-components/sections/hero';
+@use '@css/4-components/sections/person';
+@use '@css/4-components/sections/product';
+@use '@css/4-components/sections/stat';
+@use '@css/4-components/sections/stats';
+@use '@css/4-components/sections/testimonial';
+@use '@css/4-components/sections/text-media';
+@use '@css/4-components/sections/ticker-section';
 @use '@css/4-components/blog';
 @use '@css/4-components/blog-list';
 @use '@css/4-components/blog-list-item';

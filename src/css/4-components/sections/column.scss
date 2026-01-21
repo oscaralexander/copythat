@@ -51,12 +51,6 @@
     }
 
     @include screen-min(l) {
-        &__inner {  
-            &--icon {
-                flex-direction: column;
-            }
-        }
-
         .column__icon {
             flex: 0 0 4rem;
             height: 4rem;

@@ -1,14 +1,27 @@
 .u-theme {
     @for $i from 1 through 4 {
         &-#{$i} {
-            --color-text: var(--theme-#{$i}-color-text);
-            --color-text-accent: var(--theme-#{$i}-color);
-            --color-text-hc: var(--theme-#{$i}-color-text-hc);
-            --color-text-lc: var(--theme-#{$i}-color-text-lc);
-            --h1-color: var(--theme-#{$i}-color-text-hc);
-            --h2-color: var(--theme-#{$i}-color-text-hc);
-            --h5-color: var(--theme-#{$i}-color-text-lc);
-            --color-link: var(--theme-#{$i}-color-link);
+            --color-bg: var(--theme-#{$i}-color-bg, var(--color-bg));
+            --color-bg-tint: var(--theme-#{$i}-color-bg-tint, var(--color-bg-tint));
+
+            --color-border: var(--theme-#{$i}-color-border, var(--color-border));
+            --color-border-hc: var(--theme-#{$i}-color-border-hc, var(--color-border-hc));
+            --color-border-lc: var(--theme-#{$i}-color-border-lc, var(--color-border-lc));
+
+            --color-text: var(--theme-#{$i}-color-text, var(--color-text));
+            --color-text-accent: var(--theme-#{$i}-color, var(--color-text-accent));
+            --color-text-hc: var(--theme-#{$i}-color-text-hc, var(--color-text-hc));
+            --color-text-lc: var(--theme-#{$i}-color-text-lc, var(--color-text-lc));
+
+            --color-link: var(--theme-#{$i}-color-link, var(--color-link));
+            --color-link-hover: var(--theme-#{$i}-color-link-hover, var(--color-link-hover));
+
+            --h1-color: var(--theme-#{$i}-color-text-hc, var(--h1-color));
+            --h2-color: var(--theme-#{$i}-color-text-hc, var(--h2-color));
+            --h3-color: var(--theme-#{$i}-color-text-hc, var(--h3-color));
+            --h4-color: var(--theme-#{$i}-color-text-hc, var(--h4-color));
+            --h5-color: var(--theme-#{$i}-color-text-lc, var(--h5-color));
+
             background: var(--theme-#{$i}-color-bg);
             color: var(--theme-#{$i}-color-text);
 
@@ -19,7 +32,7 @@
             .u-color-text-hc {
                 color: var(--theme-#{$i}-color-text-hc);
             }
-    
+
             .u-color-text-lc {
                 color: var(--theme-#{$i}-color-text-lc);
             }
@@ -27,26 +40,54 @@
     }
 
     &-inverted {
-        --color-text: var(--theme-inverted-color);
+        --color-bg: var(--theme-inverted-color-bg);
+        --color-bg-tint: var(--theme-inverted-color-bg-tint);
+
+        --color-border: var(--theme-inverted-color-border);
+        --color-border-hc: var(--theme-inverted-color-border-hc);
+        --color-border-lc: var(--theme-inverted-color-border-lc);
+
+        --color-text: var(--theme-inverted-color-text);
         --color-text-accent: var(--theme-inverted-color);
         --color-text-hc: var(--theme-inverted-color-text-hc);
         --color-text-lc: var(--theme-inverted-color-text-lc);
 
-        --btn-bg-color: var(--btn-inverted-bg-color);
-        --btn-bg-color-hover: var(--btn-inverted-bg-color-hover);
-        --btn-color: var(--btn-inverted-color);
-        --btn-color-hover: var(--btn-inverted-color-hover);
-        --btn-border-color: var(--btn-inverted-border-color);
-        --btn-border-color-hover: var(--btn-inverted-border-color-hover);
+        --color-link: var(--theme-inverted-color-link, var(--color-link));
+        --color-link-hover: var(--theme-inverted-color-link-hover, var(--color-link-hover));
 
-        // --btn-primary-bg-color: transparent;
-        // --btn-primary-bg-color-hover: transparent;
-        // --btn-primary-color: var(--btn-primary-inverted-color);
-        // --btn-primary-color-hover: var(--btn-primary-inverted-color-hover);
-        // --btn-primary-border-color: transparent;
-        // --btn-primary-border-color-hover: transparent;
+        --h1-color: var(--theme-inverted-color-text-hc);
+        --h2-color: var(--theme-inverted-color-text-hc);
+        --h3-color: var(--theme-inverted-color-text-hc);
+        --h4-color: var(--theme-inverted-color-text-hc);
+        --h5-color: var(--theme-inverted-color-text-lc);
+
+        --btn-bg-color: var(--theme-inverted-btn-bg-color, var(--btn-bg-color));
+        --btn-bg-color-hover: var(--theme-inverted-btn-bg-color-hover, var(--btn-bg-color-hover));
+        --btn-color: var(--theme-inverted-btn-color, var(--btn-color));
+        --btn-color-hover: var(--theme-inverted-btn-color-hover, var(--btn-color-hover));
+        --btn-border-color: var(--theme-inverted-btn-border-color, var(--btn-border-color));
+        --btn-border-color-hover: var(--theme-inverted-btn-border-color-hover, var(--btn-border-color-hover));
+
+        --btn-primary-bg-color: var(--theme-inverted-btn-primary-bg-color, var(--btn-primary-bg-color));
+        --btn-primary-bg-color-hover: var(--theme-inverted-btn-primary-bg-color-hover, var(--btn-primary-bg-color-hover));
+        --btn-primary-color: var(--theme-inverted-btn-primary-color, var(--btn-primary-color));
+        --btn-primary-color-hover: var(--theme-inverted-btn-primary-color-hover, var(--btn-primary-color-hover));
+        --btn-primary-border-color: var(--theme-inverted-btn-primary-border-color, var(--btn-primary-border-color));
+        --btn-primary-border-color-hover: var(--theme-inverted-btn-primary-border-color-hover, var(--btn-primary-border-color-hover));
 
         background: var(--theme-inverted-color-bg);
         color: var(--theme-inverted-color);
+
+        .u-color-text-accent {
+            color: var(--theme-inverted-color);
+        }
+
+        .u-color-text-hc {
+            color: var(--theme-inverted-color-text-hc);
+        }
+
+        .u-color-text-lc {
+            color: var(--theme-inverted-color-text-lc);
+        }
     }
 }

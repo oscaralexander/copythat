@@ -2,8 +2,8 @@ baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: default
 hasUrls: true
-language: en
-name: 'Alfred Surgery'
+language: nl-NL
+name: 'Renee Boelaars'
 primary: true
-siteGroup: 3198be24-dc1d-4dd1-b50f-b1e529bedeaa # Alfred Surgery
+siteGroup: 3198be24-dc1d-4dd1-b50f-b1e529bedeaa # Renee Boelaars
 sortOrder: 1

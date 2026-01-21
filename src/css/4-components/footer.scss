@@ -1,8 +1,6 @@
 @use '@css/2-tools/mixins' as *;
 
 .footer {
-    background: var(--footer-color-bg);
-    color: var(--footer-color-text);
     margin-top: var(--section-padding-y);
 
     &__inner {
@@ -15,8 +13,8 @@
     }
 
     &__heading {
-        color: var(--footer-color-text-hc);
         font-size: var(--font-size-xl);
+        font-weight: 600;
         letter-spacing: 0;
         margin-bottom: var(--size-s);
     }
@@ -27,8 +25,7 @@
 
         b,
         strong {
-            color: var(--footer-color-text-hc);
-            font-weight: 600;
+            font-weight: 00;
         }
     }
 
@@ -44,7 +41,7 @@
     }
 
     &__icon {
-        background-color: var(--footer-color-link);
+        background: var(--color-link);
         display: block;
         height: 1.5rem;
         mask-size: 100% 100%;
@@ -53,7 +50,7 @@
         width: 1.5rem;
 
         &:hover {
-            background-color: var(--footer-color-link-hover);
+            background: var(--color-link-hover);
         }
 
         &--instagram {
@@ -62,6 +59,10 @@
 
         &--linkedin {
             mask-image: url('@public/assets/icons/linkedin.svg');
+        }
+
+        &--spotify {
+            mask-image: url('@public/assets/icons/spotify.svg');
         }
 
         &--whatsapp {
@@ -74,10 +75,7 @@
     }
 
     &__separator {
-        background: var(--footer-legal-color-bg);
-        color: var(--footer-legal-color-text);
-
-        a { 
+        a {
             color: var(--footer-legal-color-text) !important;
             display: inline-block;
             text-decoration-color: transparent;

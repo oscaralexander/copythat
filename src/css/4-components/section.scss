@@ -2,7 +2,7 @@
 
 .section {
     position: relative;
-    
+
     &:first-child {
         padding-top: calc(var(--nav-height) + var(--nav-offset-y)) !important;
     }
@@ -24,12 +24,10 @@
     }
 
     &__intro {
-        .large {
-            font-size: 1.25rem;
-        }
+        font-size: var(--font-size-l);
     }
 
-    &:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0) + .section:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0) {
+    &:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0)+.section:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0) {
         margin-top: calc(var(--section-padding-y) * -.5);
     }
 

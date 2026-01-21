@@ -10,9 +10,16 @@
 .menu {
     &__link {
         align-items: center;
+        color: var(--nav-link-color);
         display: flex;
+        font-size: var(--nav-link-font-size);
+        font-weight: var(--nav-link-font-weight);
         justify-content: space-between;
         transition: var(--duration-s);
+
+        &:hover {
+            color: var(--nav-link-color-hover);
+        }
     }
 
     @include screen-max(m) {
@@ -47,7 +54,6 @@
         }
 
         &__link {
-            color: var(--color-text-hc);
             font-size: var(--font-size-l);
             font-weight: 500;
             min-height: 32px;
@@ -131,6 +137,7 @@
         &__link {
             align-items: center;
             border-radius: var(--btn-border-radius);
+            color: var(--nav-link-color);
             display: flex;
             gap: .5em;
             line-height: var(--btn-height);

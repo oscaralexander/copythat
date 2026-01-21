@@ -8,23 +8,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-10-13T11:34:11+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 14913363-a919-43c8-8d6f-2b849650e3ea
-            userCondition: null
-            warning: null
-            width: 100
-          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -90,6 +73,29 @@ fieldLayouts:
             width: 100
         name: Content
         uid: acd7c6dc-1eea-4469-b969-327b7cd1ff0f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-13T11:34:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14913363-a919-43c8-8d6f-2b849650e3ea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Styling
+        uid: 407ec9c0-313c-4c2e-9680-b877afd0862d
         userCondition: null
 handle: callToAction
 hasTitleField: true

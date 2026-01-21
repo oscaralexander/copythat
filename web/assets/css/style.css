@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+:root {
+    --theme-1-color: #E6F3FC;
+    --theme-1-color-bg: #E6F3FC;
+    --theme-1-color-text: var(--color-text);
+    --theme-1-color-text-hc: var(--color-text-hc);
+    --theme-1-color-text-lc: var(--color-text-lc);
+
+    --theme-2-color: #F3ECFF;
+    --theme-2-color-bg: #F3ECFF;
+    --theme-2-color-text: var(--color-text);
+    --theme-2-color-text-hc: var(--color-text-hc);
+    --theme-2-color-text-lc: var(--color-text-lc);
+
+    --theme-3-color: #F9F6C6;
+    --theme-3-color-bg: #F9F6C6;
+    --theme-3-color-text: var(--color-text);
+    --theme-3-color-text-hc: var(--color-text-hc);
+    --theme-3-color-text-lc: var(--color-text-lc);
+
+    --theme-4-color: #F9F6F3;
+    --theme-4-color-bg: #F9F6F3;
+    --theme-4-color-text: var(--color-text);
+    --theme-4-color-text-hc: var(--color-text-hc);
+    --theme-4-color-text-lc: var(--color-text-lc);
+
+    --theme-inverted-color: rgb(255, 255, 255, .75);
+    --theme-inverted-color-bg: rgb(0, 0, 0);
+    --theme-inverted-color-bg-tint: rgb(22, 12, 44);
+
+    --theme-inverted-color-text: rgb(255, 255, 255, .75);
+    --theme-inverted-color-text-hc: rgb(255, 255, 255);
+    --theme-inverted-color-text-lc: rgba(255, 255, 255, .5);
+
+    --theme-inverted-color-link: rgb(255, 255, 255, .75);
+    --theme-inverted-color-link-hover: rgb(255, 255, 255);
+
+    --theme-inverted-btn-primary-color: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-color-hover: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-border-color: rgba(255, 255, 255, .25);
+    --theme-inverted-btn-primary-border-color-hover: rgba(255, 255, 255, .35);
+}
+
+.testimonial__body em,
+.testimonial__body i {
+    background: rgb(249, 246, 198) !important;
+    font-style: normal !important;
+}

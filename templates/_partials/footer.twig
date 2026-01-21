@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer u-theme-inverted">
     <div class="wrapper footer__inner">
         <div class="grid grid--gap-l l:grid--gap-xxl">
             <div class="grid__col l:grid__col--span-6">
@@ -48,6 +48,9 @@
                     {% if contact.linkedinUrl %}
                         <li><a class="footer__icon footer__icon--linkedin" href="{{ contact.linkedinUrl }}" target="_blank">LinkedIn</a></li>
                     {% endif %}
+                    {% if contact.spotifyUrl %}
+                        <li><a class="footer__icon footer__icon--spotify" href="{{ contact.spotifyUrl }}" target="_blank">Spotify</a></li>
+                    {% endif %}
                     {% if contact.enableWhatsapp %}
                         <li><a class="footer__icon footer__icon--whatsapp" href="https://wa.me/{{ contact.phone|replace({' ': ''}) }}" target="_blank">WhatsApp</a></li>
                     {% endif %}
@@ -55,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="footer__separator">
+    <div class="footer__separator u-theme-1">
         <div class="wrapper">
             <div class="footer__legal">
                 <div>

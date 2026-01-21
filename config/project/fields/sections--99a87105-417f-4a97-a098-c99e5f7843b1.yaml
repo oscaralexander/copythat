@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: blocks
+handle: sections
 instructions: null
-name: Blocks
+name: Sections
 searchable: false
 settings:
   createButtonLabel: null
@@ -12,7 +12,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 50e0cd0c-38a3-4d3d-a601-113f88273bf0 # Hero
+          - 878e0c1f-b9cf-4242-a3f5-f50aad792696 # Accordion
         -
           - group
           - General
@@ -20,7 +20,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 692ce4fc-23b7-44b2-85a5-bab07af1139b # Text
+          - b071e616-7307-4613-961a-77e04a35e223 # Blog Index
         -
           - group
           - General
@@ -28,7 +28,7 @@ settings:
       __assoc__:
         -
           - uid
-          - d9d07fc4-9677-4550-b080-2a25872689be # Text & Media
+          - 2ba1c57c-3cf0-40af-9276-7f085079ea8d # Call to Action
         -
           - group
           - General
@@ -60,7 +60,7 @@ settings:
       __assoc__:
         -
           - uid
-          - c8d42f98-440c-490c-aed6-38551d980f24 # Products
+          - 50e0cd0c-38a3-4d3d-a601-113f88273bf0 # Hero
         -
           - group
           - General
@@ -68,7 +68,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 3e3cd250-f9e2-4359-b2bd-61a1652fb125 # Testimonials
+          - 6cd47c8a-7515-48fa-a3bd-a5eb0bb5b18d
         -
           - group
           - General
@@ -76,7 +76,7 @@ settings:
       __assoc__:
         -
           - uid
-          - b071e616-7307-4613-961a-77e04a35e223 # Blog Index
+          - 010a5f91-ff2c-499b-a3d4-f00c9311314e
         -
           - group
           - General
@@ -92,7 +92,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 2ba1c57c-3cf0-40af-9276-7f085079ea8d # Call to Action
+          - c8d42f98-440c-490c-aed6-38551d980f24 # Products
         -
           - group
           - General
@@ -101,6 +101,38 @@ settings:
         -
           - uid
           - 93be216b-1870-4719-b415-8b80b103c6cc # Stats
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 3e3cd250-f9e2-4359-b2bd-61a1652fb125 # Testimonials
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 692ce4fc-23b7-44b2-85a5-bab07af1139b # Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - d9d07fc4-9677-4550-b080-2a25872689be # Text & Media
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ba552aa7-6c34-4d78-8422-289c1081a004 # Ticker
         -
           - group
           - General

@@ -13,16 +13,20 @@
         text-underline-offset: 2px;
     }
 
-    b, strong {
+    b,
+    strong {
         color: var(--color-text-hc);
         font-weight: 600;
     }
 
-    em, i {
+    em,
+    i {
         font-style: italic;
     }
 
-    h2, h3, h4 {
+    h2,
+    h3,
+    h4 {
         font-family: var(--font-1);
         letter-spacing: var(--letter-spacing);
         margin: 1.5em 0 .25em;
@@ -44,12 +48,13 @@
     ol {
         list-style-type: decimal;
 
-        & > li {
+        &>li {
             margin-left: 1.75em;
             padding-left: .25em;
         }
 
-        ol, ul {
+        ol,
+        ul {
             margin: 0;
         }
     }
@@ -60,12 +65,13 @@
         gap: .5em;
         list-style-type: disc;
 
-        & > li {
+        &>li {
             margin-left: 1.15em;
             padding-left: .25em;
         }
 
-        ol, ul {
+        ol,
+        ul {
             margin: 0;
         }
     }
@@ -90,7 +96,7 @@
                 position: absolute;
                 top: 0.125em;
                 width: 1.25em;
-            }   
+            }
         }
     }
 
