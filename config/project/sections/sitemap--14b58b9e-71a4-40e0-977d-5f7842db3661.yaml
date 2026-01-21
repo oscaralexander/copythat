@@ -20,7 +20,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars
+  67aabd95-1a33-42f9-8870-0d419b6007ab: # CopyThat Creations
     enabledByDefault: true
     hasUrls: true
     template: _sitemap.twig

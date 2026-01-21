@@ -1,4 +1,4 @@
-dateModified: 1769014102
+dateModified: 1769014615
 elementSources:
   craft\elements\Entry:
     -
@@ -139,7 +139,7 @@ meta:
     45b27572-33f7-4ecb-9e2b-43bad0388805: Columns # Columns
     48f4ce5d-5120-4dd1-843f-0021b92219f8: Item # Item
     50e0cd0c-38a3-4d3d-a601-113f88273bf0: Hero # Hero
-    67aabd95-1a33-42f9-8870-0d419b6007ab: 'Renee Boelaars' # Renee Boelaars
+    67aabd95-1a33-42f9-8870-0d419b6007ab: 'CopyThat Creations' # CopyThat Creations
     80b3fe6d-fa96-4075-a87b-66e40195b590: Eyebrow # Eyebrow
     93be216b-1870-4719-b415-8b80b103c6cc: Stats # Stats
     93f9eddd-2e94-4333-8db0-8a42333ccedf: 'Include in navigation?' # Include in navigation?
@@ -159,7 +159,7 @@ meta:
     878e0c1f-b9cf-4242-a3f5-f50aad792696: Accordion # Accordion
     1696b5e5-1e56-4fd6-9ae9-aad6d6b67623: Cards # Cards
     2510ddde-ad78-4328-9d12-101c9179022f: Brand # Brand
-    3198be24-dc1d-4dd1-b50f-b1e529bedeaa: 'Renee Boelaars' # Renee Boelaars
+    3198be24-dc1d-4dd1-b50f-b1e529bedeaa: 'CopyThat Creations' # CopyThat Creations
     3460d60f-4a24-4f0c-b444-5903e13df418: Card # Card
     6345b7ac-0c47-4812-b1d4-fcf64bc21cea: Tagline # Tagline
     6693b5e2-3de9-49dd-86b8-3d6fcbf00e65: 'CTA URL' # CTA URL
@@ -233,10 +233,10 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'Renee Boelaars'
+  name: 'CopyThat Creations'
   retryDuration: null
   schemaVersion: 5.8.0.3
-  timeZone: Europe/Amsterdam
+  timeZone: $TZ
 users:
   allowPublicRegistration: false
   defaultGroup: null
