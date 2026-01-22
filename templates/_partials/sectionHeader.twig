@@ -7,10 +7,15 @@
         {% if section.title is not empty %}
             <h2 class="section__title textSplit js-textSplit">{{ section.title }}</h2>
         {% endif %}
-        {% if section.intro is not empty %}
-            <div class="section__intro richText">
-                {{ section.intro }}
-            </div>
-        {% endif %}
+        <div class="stack stack--gap-xl">
+            {% if section.intro is not empty %}
+                <div class="section__intro richText">
+                    {{ section.intro }}
+                </div>
+            {% endif %}
+            {% if section.ctas %}
+                {% include '_partials/ctas' with { ctas: section.ctas } %}
+            {% endif %}
+        </div>
     </header>
 {% endif %}

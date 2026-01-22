@@ -10,6 +10,7 @@
         gap: var(--size-xs);
         padding: var(--size-l) 0;
         position: relative;
+        text-align: left;
         width: 100%;
 
         &[aria-expanded=true] {

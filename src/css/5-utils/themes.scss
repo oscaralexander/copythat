@@ -1,9 +1,9 @@
 .u-theme {
     @for $i from 1 through 4 {
         &-#{$i} {
-            --color-border: var(--theme-#{$i}-color-border, var(--color-border));
-            --color-border-hc: var(--theme-#{$i}-color-border-hc, var(--color-border-hc));
-            --color-border-lc: var(--theme-#{$i}-color-border-lc, var(--color-border-lc));
+            --color-border: var(--theme-#{$i}-color-border, rgba(0, 0, 0, .1));
+            --color-border-hc: var(--theme-#{$i}-color-border-hc, rgba(0, 0, 0, .3));
+            --color-border-lc: var(--theme-#{$i}-color-border-lc, rgba(0, 0, 0, .075));
 
             --color-text: var(--theme-#{$i}-color-text, var(--color-text));
             --color-text-accent: var(--theme-#{$i}-color, var(--color-text-accent));
