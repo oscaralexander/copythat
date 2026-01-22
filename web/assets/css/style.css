@@ -6,6 +6,16 @@
     --color-link: var(--color-1);
     --color-link-hover: rgb(0, 0, 0);
 
+    /* Nav */
+    --nav-border-radius: 0;
+    --nav-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    --nav-color-link: var(--color-1);
+    --nav-color-link-hover: var(--color-text-hc);
+    --nav-height: 3.5rem;
+    --nav-offset-x: 0rem;
+    --nav-offset-y: 0rem;
+
+    /* Themes */
     --theme-1-color-bg: #E6F3FC;
     --theme-1-color-text: var(--color-text);
     --theme-1-color-text-accent: var(--color-1);
@@ -46,6 +56,13 @@
     --theme-inverted-btn-primary-color-hover: rgb(255, 255, 255);
     --theme-inverted-btn-primary-border-color: rgba(255, 255, 255, .25);
     --theme-inverted-btn-primary-border-color-hover: rgba(255, 255, 255, .35);
+}
+
+@media (min-width: 768px) {
+    :root {
+        --nav-color-link: var(--color-text);
+        --nav-color-link-hover: #000;
+    }
 }
 
 .testimonial__body em,
