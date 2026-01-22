@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: ctas
-instructions: null
+instructions: 'Enter the icon name from the Lucide icon set: https://lucide.dev/icons/'
 name: CTAs
 searchable: false
 settings:
