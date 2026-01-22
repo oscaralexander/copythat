@@ -56,12 +56,15 @@
     --theme-inverted-btn-primary-color-hover: rgb(255, 255, 255);
     --theme-inverted-btn-primary-border-color: rgba(255, 255, 255, .25);
     --theme-inverted-btn-primary-border-color-hover: rgba(255, 255, 255, .35);
-}
 
-@media (min-width: 768px) {
-    :root {
+    @media (min-width: 768px) {
+        --nav-border-radius: 1rem;
         --nav-color-link: var(--color-text);
         --nav-color-link-hover: #000;
+        --nav-box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .1);
+        --nav-height: 5rem;
+        --nav-offset-x: 1rem;
+        --nav-offset-y: 1rem;
     }
 }
 
