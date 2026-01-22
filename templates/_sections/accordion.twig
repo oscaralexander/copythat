@@ -2,7 +2,7 @@
     <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
         <div class="grid grid--center grid--gap-xxl">
             <div class="grid__col l:grid__col--span-6">
-                {% include '_partials/sectionHeader' with { section: section } %}
+                {% include '_partials/sectionHeader' with { ctas: section.ctas, section: section } %}
             </div>
             <div class="grid__col l:grid__col--span-6">
                 <div class="accordion__items">
