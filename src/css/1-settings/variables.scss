@@ -23,7 +23,6 @@ $sizes: (
 
     --font-1: 'Inter', system-ui, sans-serif;
     --font-2: 'The Seasons', system-ui, sans-serif;
-    --font-3: 'DM Serif Display', system-ui, sans-serif;
     --letter-spacing: 0;
 
     // Font size
@@ -33,7 +32,7 @@ $sizes: (
     --font-size-m: 1rem;
     --font-size-l: 1.125rem;
     --font-size-xl: 1.25rem;
-    --font-size-xxl: 1.75rem;
+    --font-size-xxl: 1.5rem;
     --font-size-3xl: 2rem;
     --font-size-4xl: 2.5rem;
 
@@ -50,6 +49,8 @@ $sizes: (
     // Nav
     --nav-border-radius: 0;
     --nav-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    --nav-color-link: var(--color-1);
+    --nav-color-link-hover: var(--color-text-hc);
     --nav-height: 3.5rem;
     --nav-offset-x: 0rem;
     --nav-offset-y: 0rem;
@@ -66,8 +67,6 @@ $sizes: (
     --media-border-radius-l: 1rem;
 
     // Colors
-    --color-1: rgb(147, 128, 201);
-
     --color-bg: #FFF;
     --color-bg-tint: oklch(97.5% 0.01 260);
 
@@ -75,9 +74,6 @@ $sizes: (
     --color-text-accent: var(--color-1);
     --color-text-hc: rgba(0, 0, 0, 1);
     --color-text-lc: rgba(0, 0, 0, .5);
-
-    --color-link: rgb(147, 128, 201);
-    --color-link-hover: rgb(0, 0, 0);
 
     --color-border: rgba(0, 0, 0, .1);
     --color-border-hc: rgba(0, 0, 0, .3);
@@ -126,7 +122,7 @@ $sizes: (
     --h2-size: var(--font-size-3xl);
     --h2-style: normal;
     --h2-text-transform: none;
-    --h2-weight: 400;
+    --h2-weight: 700;
 
     // H3
     --h3-color: var(--color-text-hc);
@@ -205,7 +201,7 @@ $sizes: (
 @media (min-width: 768px) {
     :root {
         // Font size
-        --font-size-xxl: 3rem;
+        --font-size-xxl: 1.75rem;
         --font-size-3xl: 2.75rem;
         --font-size-4xl: 4rem;
 

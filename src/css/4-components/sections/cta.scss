@@ -14,12 +14,8 @@
         flex: 1;
     }
 
-    &__text {
-        font-size: var(--font-size-l);
-    }
-
     &__title {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-xxl);
     }
 
     &__cta {
@@ -35,6 +31,7 @@
         }
 
         &__text {
+            font-size: var(--font-size-l);
             text-align: center;
         }
     }

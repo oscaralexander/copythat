@@ -1,6 +1,11 @@
 @charset 'utf-8';
 
 :root {
+    --color-1: #8066ba;
+
+    --color-link: var(--color-1);
+    --color-link-hover: rgb(0, 0, 0);
+
     --theme-1-color-bg: #E6F3FC;
     --theme-1-color-text: var(--color-text);
     --theme-1-color-text-accent: var(--color-1);
@@ -29,7 +34,8 @@
     --theme-inverted-color-bg: rgb(0, 0, 0);
     --theme-inverted-color-bg-tint: rgb(22, 12, 44);
 
-    --theme-inverted-color-text: rgb(255, 255, 255, .75);
+    --theme-inverted-color-text: rgb(255, 255, 255, .65);
+    --theme-inverted-color-text-accent: rgb(255, 255, 255);
     --theme-inverted-color-text-hc: rgb(255, 255, 255);
     --theme-inverted-color-text-lc: rgba(255, 255, 255, .5);
 
