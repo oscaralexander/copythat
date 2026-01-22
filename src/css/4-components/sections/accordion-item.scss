@@ -1,14 +1,14 @@
+@use '@css/2-tools/mixins' as *;
+
 .accordionItem {
-    &:not(:last-child) {
-        border-bottom: 1px solid var(--color-border);
-    }
+    border-top: 1px solid var(--color-border);
 
     &__toggle {
         align-items: flex-start;
         display: flex;
         flex-direction: column;
         gap: var(--size-xs);
-        padding: var(--size-l) 0;
+        padding: var(--size-l) var(--size-xl) var(--size-l) 0;
         position: relative;
         text-align: left;
         width: 100%;
@@ -58,5 +58,11 @@
 
     &__title {
         font-size: var(--font-size-xl);
+    }
+
+    @include screen-min(l) {
+        &:first-child {
+            border-top: none;
+        }
     }
 }
