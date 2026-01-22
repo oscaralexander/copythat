@@ -1,19 +1,8 @@
-{% set logo = brand.logoNav.one() %}
-
 <nav class="nav js-nav">
     <div class="nav__inner">
         <div class="nav__top">
-            <button 
-                aria-controls="navMenu"
-                aria-expanded="false"
-                aria-haspopup="true"
-                aria-label="Menu"
-                class="nav__menuToggle js-navMenuToggle"
-                id="navMenuToggle"
-            >
-                <div></div>
-            </button>
-            <a class="nav__logoLink"href="{{ siteUrl }}">
+            {% set logo = brand.logoNav.one() %}
+            <a href="{{ siteUrl }}">
                 {% if logo %}
                     <img alt="{{ currentSite.name }}" class="nav__logo" src="{{ logo.url }}">
                 {% else %}
@@ -27,12 +16,14 @@
                 id="navMenu"
                 role="menubar"
             >
-                <ul class="menu nav__menu-menu" role="menu">
+                <header class="nav__menuHeader">Menu</header>
+                <ul class="menu" role="menu">
                     {% set navPages = craft.entries().section('pages').level(1).includeInNav(true).all() %}
                     {% for page in navPages %}
                         <li class="menu__item">
                             <a class="menu__link" href="{{ page.url }}" role="menuitem">{{ page.title }}</a>
                             {% if page.children.includeInNav(true)|length %}
+                                <input type="checkbox" class="menu__submenuToggle">
                                 <ul class="menu__submenu" role="submenu">
                                     {% for child in page.children.includeInNav(true) %}
                                         <li class="menu__submenu-item">
@@ -44,7 +35,7 @@
                         </li>
                     {% endfor %}
                 </ul>
-                <footer class="nav__menu-footer">
+                <footer class="nav__menuFooter">
                     {% if navigation.ctas is not empty %}
                         {% include '_partials/ctas' with { ctas: navigation.ctas } %}
                     {% endif %}
@@ -55,6 +46,16 @@
                     {% include '_partials/ctas' with { ctas: navigation.ctas } %}
                 {% endif %}
             </div>
+            <button 
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Menu"
+                class="nav__menuToggle js-navMenuToggle"
+                id="navMenuToggle"
+            >
+                <div></div>
+            </button>
         </div>
     </div>
 </nav>

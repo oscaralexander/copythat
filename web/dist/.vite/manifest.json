@@ -1,17 +1,17 @@
 {
   "src/js/index.js": {
-    "file": "assets/app-JtnNjfFP.js",
+    "file": "assets/app-BWmwAYNn.js",
     "name": "app",
     "src": "src/js/index.js",
     "isEntry": true,
     "css": [
-      "assets/app-B7uiCYcU.css"
+      "assets/app-BNgcvAnQ.css"
     ],
     "assets": [
       "assets/TheSeasons-Bold-D41sU-Gl.woff",
       "assets/TheSeasons-Bold-Cw3ZaWQh.woff2"
     ],
-    "integrity": "sha384-K/6wh2UTDYCf/0EBWTRcxlSew1vUfPxeE1SdjU4G2WG17EBRsT/hv2thIIwziup9"
+    "integrity": "sha384-VnTkGjLwkNMF02lGpvt+PY1jf52QuA4B2qzubj+fudbRcu3qVHR8+tirdPqhx+LR"
   },
   "web/assets/fonts/TheSeasons-Bold.woff": {
     "file": "assets/TheSeasons-Bold-D41sU-Gl.woff",

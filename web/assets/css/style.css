@@ -1,27 +1,27 @@
 @charset 'utf-8';
 
 :root {
-    --theme-1-color: #E6F3FC;
     --theme-1-color-bg: #E6F3FC;
     --theme-1-color-text: var(--color-text);
+    --theme-1-color-text-accent: var(--color-1);
     --theme-1-color-text-hc: var(--color-text-hc);
     --theme-1-color-text-lc: var(--color-text-lc);
 
-    --theme-2-color: #F3ECFF;
     --theme-2-color-bg: #F3ECFF;
     --theme-2-color-text: var(--color-text);
+    --theme-2-color-text-accent: var(--color-1);
     --theme-2-color-text-hc: var(--color-text-hc);
     --theme-2-color-text-lc: var(--color-text-lc);
 
-    --theme-3-color: #F9F6C6;
     --theme-3-color-bg: #F9F6C6;
     --theme-3-color-text: var(--color-text);
+    --theme-3-color-text-accent: var(--color-1);
     --theme-3-color-text-hc: var(--color-text-hc);
     --theme-3-color-text-lc: var(--color-text-lc);
 
-    --theme-4-color: #F9F6F3;
     --theme-4-color-bg: #F9F6F3;
     --theme-4-color-text: var(--color-text);
+    --theme-4-color-text-accent: var(--color-1);
     --theme-4-color-text-hc: var(--color-text-hc);
     --theme-4-color-text-lc: var(--color-text-lc);
 

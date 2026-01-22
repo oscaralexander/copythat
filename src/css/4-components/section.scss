@@ -23,10 +23,6 @@
         gap: var(--size-m);
     }
 
-    &__intro {
-        font-size: var(--font-size-l);
-    }
-
     &:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0)+.section:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0) {
         margin-top: calc(var(--section-padding-y) * -.5);
     }

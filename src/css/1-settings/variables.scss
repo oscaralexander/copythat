@@ -23,6 +23,7 @@ $sizes: (
 
     --font-1: 'Inter', system-ui, sans-serif;
     --font-2: 'The Seasons', system-ui, sans-serif;
+    --font-3: 'DM Serif Display', system-ui, sans-serif;
     --letter-spacing: 0;
 
     // Font size
@@ -31,9 +32,10 @@ $sizes: (
     --font-size-s: .875rem;
     --font-size-m: 1rem;
     --font-size-l: 1.125rem;
-    --font-size-xl: 1.5rem;
-    --font-size-xxl: 2.25rem;
-    --font-size-3xl: 2.75rem;
+    --font-size-xl: 1.25rem;
+    --font-size-xxl: 1.75rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
 
     // Line heights
     --line-height-s: 1.15;
@@ -41,16 +43,16 @@ $sizes: (
     --line-height-l: 1.6;
 
     // Layout sizing
-    --gutter: 1.25em;
+    --gutter: 1.25rem;
     --wrapper-width: 85rem; // 1360px
     --wrapper-width-narrow: 44rem;
 
     // Nav
-    --nav-border-radius: .5rem;
-    --nav-box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
-    --nav-height: 3.5em;
-    --nav-offset-x: .5rem;
-    --nav-offset-y: .5rem;
+    --nav-border-radius: 0;
+    --nav-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    --nav-height: 3.5rem;
+    --nav-offset-x: 0rem;
+    --nav-offset-y: 0rem;
 
     // Logo
     --logo-height: 1.75em;
@@ -64,32 +66,22 @@ $sizes: (
     --media-border-radius-l: 1rem;
 
     // Colors
-    --color-1: oklch(65% 0.18 315);
-    --color-1-hover: oklch(60% 0.2 315);
-    --color-1-lch: 65% 0.18 315;
-    --color-1-tint: oklch(97.5% 0.05 315);
-    --color-1-tint-hover: oklch(95% 0.075 315);
-
-    --color-2: oklch(88% 0.06 246);
-    --color-2-hover: oklch(84% 0.08 246);
-    --color-2-lch: 88% 0.06 246;
-    --color-2-tint: oklch(97.5% 0.02 246);
-    --color-2-tint-hover: oklch(95% 0.035 246);
+    --color-1: rgb(147, 128, 201);
 
     --color-bg: #FFF;
     --color-bg-tint: oklch(97.5% 0.01 260);
 
     --color-text: rgba(0, 0, 0, .75);
-    --color-text-accent: rgba(0, 0, 0, 1);
+    --color-text-accent: var(--color-1);
     --color-text-hc: rgba(0, 0, 0, 1);
     --color-text-lc: rgba(0, 0, 0, .5);
 
-    --color-link: rgba(0, 0, 0, .75);
-    --color-link-hover: rgba(0, 0, 0, 1);
+    --color-link: rgb(147, 128, 201);
+    --color-link-hover: rgb(0, 0, 0);
 
-    --color-border: rgba(0, 0, 0, .15);
+    --color-border: rgba(0, 0, 0, .1);
     --color-border-hc: rgba(0, 0, 0, .3);
-    --color-border-lc: rgba(0, 0, 0, .1);
+    --color-border-lc: rgba(0, 0, 0, .075);
 
     --color-danger: #DD3300;
     --color-success: #009900;
@@ -121,7 +113,7 @@ $sizes: (
     --h1-font: var(--font-2);
     --h1-letter-spacing: 0;
     --h1-line-height: 1.25;
-    --h1-size: var(--font-size-3xl);
+    --h1-size: var(--font-size-4xl);
     --h1-style: normal;
     --h1-text-transform: none;
     --h1-weight: 700;
@@ -130,18 +122,18 @@ $sizes: (
     --h2-color: var(--color-text-hc);
     --h2-font: var(--font-2);
     --h2-letter-spacing: 0;
-    --h2-line-height: var(--line-height-m);
-    --h2-size: var(--font-size-xxl);
+    --h2-line-height: var(--line-height-s);
+    --h2-size: var(--font-size-3xl);
     --h2-style: normal;
     --h2-text-transform: none;
-    --h2-weight: 700;
+    --h2-weight: 400;
 
     // H3
     --h3-color: var(--color-text-hc);
     --h3-font: var(--font-1);
     --h3-letter-spacing: 0;
     --h3-line-height: var(--line-height-m);
-    --h3-size: var(--font-size-l);
+    --h3-size: var(--font-size-xl);
     --h3-style: normal;
     --h3-text-transform: none;
     --h3-weight: 600;
@@ -157,7 +149,7 @@ $sizes: (
     --h4-weight: 600;
 
     // H5
-    --h5-color: var(--color-text-hc);
+    --h5-color: var(--color-1);
     --h5-font: var(--font-1);
     --h5-letter-spacing: .05em;
     --h5-line-height: var(--line-height-m);
@@ -213,10 +205,9 @@ $sizes: (
 @media (min-width: 768px) {
     :root {
         // Font size
-        // --font-size-l: 1.25rem;
-        --font-size-xl: 1.75rem;
         --font-size-xxl: 3rem;
-        --font-size-3xl: 4rem;
+        --font-size-3xl: 3rem;
+        --font-size-4xl: 4rem;
 
         // Layout
         --gutter: 3em;
