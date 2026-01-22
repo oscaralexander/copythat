@@ -44,14 +44,14 @@
     &__content {
         overflow-y: clip;
         height: 0;
-        transition: var(--duration-m) ease;
+        transition: var(--duration-l) cubic-bezier(.75, 0, .175, 1);
     }
 
     &__body {
         opacity: 0;
         padding-bottom: 2rem;
         transform: scale(0.9);
-        transition: var(--duration-m) ease;
+        transition: var(--duration-l) cubic-bezier(.75, 0, .175, 1);
         transform-origin: top left;
     }
 
