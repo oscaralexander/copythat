@@ -10,7 +10,7 @@
 .menu {
     &__link {
         align-items: center;
-        color: var(--nav-link-color);
+        color: var(--nav-color-link);
         display: flex;
         font-size: var(--nav-link-font-size);
         font-weight: var(--nav-link-font-weight);
@@ -18,7 +18,7 @@
         transition: var(--duration-s);
 
         &:hover {
-            color: var(--nav-link-color-hover);
+            color: var(--nav-color-link-hover);
         }
     }
 
@@ -142,6 +142,7 @@
 
             &-link {
                 border-radius: var(--border-radius-s);
+                color: var(--nav-color-link);
                 display: block;
                 padding: var(--size-s) var(--size-m);
                 transition: var(--duration-s);
@@ -149,6 +150,7 @@
 
                 &:hover {
                     background: var(--color-bg-tint);
+                    color: var(--nav-color-link-hover);
                 }
             }
         }

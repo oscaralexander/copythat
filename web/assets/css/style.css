@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 :root {
-    --color-1: #8066ba;
+    --color-1: #9f4bb1;
 
     --color-link: var(--color-1);
     --color-link-hover: rgb(0, 0, 0);
