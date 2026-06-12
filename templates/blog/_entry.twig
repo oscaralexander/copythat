@@ -3,17 +3,17 @@
 {% set image = entry.blogImage.one() %}
 
 {% block openGraph %}
-    <meta name="description" content="{{ entry.summary }}">
-    <meta property="og:description" content="{{ entry.summary }}">
-    {% if image %}
-        <meta property="og:image" content="{{ image.getUrl({ format: 'jpg', height: 630, width: 1200 }) }}">
+    <meta property="og:description" content="{{ entry.seoDescription ?? entry.summary }}">
+    {% set previewImage = entry.seoPreviewImage.one() ?? image ?? brand.seoPreviewImage.one() %}
+    {% if previewImage %}
+        <meta property="og:image" content="{{ previewImage.getUrl({ format: 'jpg', height: 630, width: 1200, quality: 90 }) }}">
         <meta property="og:image:height" content="630">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:type" content="image/jpeg">
     {% endif %}
     <meta property="og:locale" content="{{ currentSite.language|replace({'-': '_'}) }}">
     <meta property="og:site_name" content="{{ siteName }}">
-    <meta property="og:title" content="{{ entry.title }}">
+    <meta property="og:title" content="{{ entry.seoTitle ?? entry.title }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ entry.url }}">
 {% endblock %}
