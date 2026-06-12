@@ -5,6 +5,7 @@
 
     &__toggle {
         align-items: flex-start;
+        color: var(--color-text-hc);
         display: flex;
         flex-direction: column;
         gap: var(--size-xs);
