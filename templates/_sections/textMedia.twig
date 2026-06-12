@@ -1,5 +1,17 @@
 {% set image = section.image.one() %}
-<section class="section textMedia textMedia--{{ section.textPosition }} {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %} js-equinox">
+
+{%
+    set classNames = [
+        'section',
+        'textMedia',
+        'textMedia--' ~ section.textPosition,
+        section.isFullWidth ? 'section--fullWidth' : '',
+        section.isFullWidth ? 'u-theme-' ~ section.theme : '',
+        'js-equinox'
+    ]|filter|join(' ')
+%}
+
+<section class="{{ classNames }}">
     {% if section.isFullWidth and image %}
         <picture class="textMedia__pictureLarge {% if settings.useParallax %}textMedia__pictureLarge--parallax{% endif %}">
             <source

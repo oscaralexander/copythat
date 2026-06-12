@@ -1,4 +1,14 @@
-<section class="section accordion {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %} js-accordion js-equinox">
+{%
+    set classNames = [
+        'section',
+        'accordion',
+        section.isFullWidth ? 'section--fullWidth' : '',
+        section.isFullWidth ? 'u-theme-' ~ section.theme : '',
+        'js-accordion'
+    ]|filter|join(' ')
+%}
+
+<section class="{{ classNames }}">
     <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
         <div class="grid grid--center grid--gap-xxl">
             <div class="grid__col l:grid__col--span-6">

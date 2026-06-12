@@ -1,4 +1,4 @@
-dateModified: 1769092523
+dateModified: 1781257895
 elementSources:
   craft\elements\Entry:
     -
@@ -220,12 +220,16 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.6.0.0
   craftagram:
     edition: standard
     enabled: true
     licenseKey: XLP4PEGA0TGQZK5UWMWTLX1N
     schemaVersion: 3.0.0
+  mcp:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   vite:
     edition: standard
     enabled: true
@@ -235,12 +239,5 @@ system:
   live: true
   name: 'CopyThat Creations'
   retryDuration: null
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.10.0.0
   timeZone: $TZ
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: bf91fe54-3286-4f7e-819d-ed8ffa367552 # Users
-  require2fa: false
-  requireEmailVerification: true

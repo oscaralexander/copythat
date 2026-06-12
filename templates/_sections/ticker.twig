@@ -1,7 +1,15 @@
 {% set tickerItems = section.tickerItems.all() %}
 
+{%
+    set classNames = [
+        'section',
+        section.isFullWidth ? 'section--fullWidth' : '',
+        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
+    ]|filter|join(' ')
+%}
+
 {% if tickerItems %}
-    <section class="section {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
+    <section class="{{ classNames }}">
         <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
             {% include '_partials/sectionHeader' with { section: section, headerAlignment: 'top' } %}
             <div class="tickerSection__ticker wrapper__outset">

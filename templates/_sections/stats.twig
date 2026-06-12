@@ -1,7 +1,16 @@
 {% set stats = section.stats.all() %}
 
+{%
+    set classNames = [
+        'section',
+        'columns',
+        section.isFullWidth ? 'section--fullWidth' : '',
+        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
+    ]|filter|join(' ')
+%}
+
 {% if stats %}
-    <section class="section columns {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %}">
+    <section class="{{ classNames }}">
         <div class="wrapper section__inner {% if section.theme %}u-theme-{{ section.theme ?? '0' }}{% endif %}">
             <div class="grid grid--gap-xxl">
                 {% if section.eyebrow or section.title or section.intro %}

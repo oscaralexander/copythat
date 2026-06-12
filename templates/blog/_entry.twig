@@ -104,9 +104,23 @@
                 <div class="grid grid--gap-xxl">
                     <div class="grid__col l:grid__col--span-8">
                         <div class="blog__body">
-                            {% for block in entry.body.all() %}
-                                {% include "_body/" ~ block.type with { block: block } %}
+                            {% for block in entry.body.status(null).all() %}
+                                {% include "_body/" ~ block.type %}
                             {% endfor %}
+                        </div>
+                        <div class="wrapper">
+                            <footer class="blog__footer">
+                                <img alt="{{ entry.author.fullName }}" class="blog__footer-authorImage" src="{{ entry.author.photo.getUrl({ format: 'webp', height: 320, width: 320 }) }}">
+                                <div class="blog__footer-text">
+                                    <h4 class="blog__footer-authorName">{{ entry.author.fullName }}</h4>
+                                    <div class="blog__footer-authorBio">{{ entry.author.bio }}</div>
+                                    <ul class="blog__footer-icons">
+                                        {% if entry.author.linkedinUrl %}
+                                            <li><a class="blog__footer-icon blog__footer-icon--linkedin" href="{{ entry.author.linkedinUrl }}" target="_blank">LinkedIn</a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </footer>
                         </div>
                     </div>
                     <div class="grid__col l:grid__col--span-4">

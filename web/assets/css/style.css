@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 :root {
-    --color-1: #9f4bb1;
+    --color-1: #9966E8;
 
     --color-link: var(--color-1);
     --color-link-hover: rgb(0, 0, 0);
@@ -44,8 +44,12 @@
     --theme-inverted-color-bg: rgb(0, 0, 0);
     --theme-inverted-color-bg-tint: rgb(22, 12, 44);
 
+    --theme-inverted-color-border: rgba(255, 255, 255, .25);
+    --theme-inverted-color-border-hc: rgba(255, 255, 255, .25);
+    --theme-inverted-color-border-lc: rgba(255, 255, 255, .15);
+
     --theme-inverted-color-text: rgb(255, 255, 255, .65);
-    --theme-inverted-color-text-accent: rgb(255, 255, 255);
+    --theme-inverted-color-text-accent: var(--color-1);
     --theme-inverted-color-text-hc: rgb(255, 255, 255);
     --theme-inverted-color-text-lc: rgba(255, 255, 255, .5);
 
