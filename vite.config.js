@@ -35,7 +35,7 @@ export default ({ command }) => ({
             '@css': path.resolve(__dirname, 'src/css'),
             '@js': path.resolve(__dirname, 'src/js'),
             '@npm': path.resolve(__dirname, 'node_modules'),
-            '@public': path.resolve(__dirname, 'web'),
+            '@web': path.resolve(__dirname, 'web'),
         },
     },
     server: {
