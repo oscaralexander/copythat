@@ -21,7 +21,7 @@
             <meta property="og:description" content="{{ entry.seoDescription }}">
             {% set previewImage = entry.seoPreviewImage.one() ?? brand.seoPreviewImage.one() %}
             {% if previewImage %}
-                <meta property="og:image" content="{{ previewImage.getUrl({ format: 'jpg', height: 630, width: 1200, quality: 90 }) }}">
+                <meta property="og:image" content="{{ previewImage.url }}">
             {% endif %}
             <meta property="og:locale" content="{{ craft.app.language }}">
             <meta property="og:site_name" content="{{ currentSite.name }}">
