@@ -11,7 +11,7 @@
                     class="testimonial__author-image"
                     decoding="async"
                     loading="lazy"
-                    src="{{ image.getUrl({ height: 160, width: 160, format: 'webp' }) }}"
+                    src="{{ image.getUrl({ format: 'webp', height: 160, quality: 95, width: 160 }) }}"
                 >
             {% endif %}
             <div class="testimonial__author-text">
