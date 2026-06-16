@@ -17,6 +17,7 @@
         <meta name="robots" content="index, follow">
         <meta name="viewport"content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover,width=device-width">
         <meta name="description" content="{{ entry.seoDescription ?? entry.summary }}">
+        {{ settings.htmlHead|raw }}
         {% block openGraph %}
             <meta property="og:description" content="{{ entry.seoDescription }}">
             {% set previewImage = entry.seoPreviewImage.one() ?? brand.seoPreviewImage.one() %}
