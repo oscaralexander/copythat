@@ -32,7 +32,15 @@
                     {% set address = contact.address.one() %}
                     {% if address %}
                         <a href="{{ address.googleMapsUrl }}" target="_blank">
-                            {{ address.addressLine1 }}<br>
+                            {% if address.addressLine1 %}
+                                {{ address.addressLine2 }}<br>
+                            {% endif %}
+                            {% if address.addressLine2 %}
+                                {{ address.addressLine2 }}<br>
+                            {% endif %}
+                            {% if address.addressLine3 %}
+                                {{ address.addressLine3 }}<br>
+                            {% endif %}
                             {{ address.postalCode }} {{ address.locality }}
                         </a>
                     {% endif %}
