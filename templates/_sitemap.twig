@@ -9,7 +9,11 @@
             {% if entry.dateUpdated is defined %}
                 <lastmod>{{ entry.dateUpdated|date('c') }}</lastmod>
             {% endif %}
-            <loc>{{ entry.url }}</loc>
+            {% if entry.slug == 'home' %}
+                <loc>{{ siteUrl }}</loc>
+            {% else %}
+                <loc>{{ entry.url }}</loc>
+            {% endif %}
             <priority>{% if entry.slug == 'home' %}1.0{% else %}0.5{% endif %}</priority>
         </url>
     {% endfor %}
