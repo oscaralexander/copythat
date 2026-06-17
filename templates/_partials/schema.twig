@@ -18,7 +18,7 @@
                 "addressCountry": "{{ contact.address.one().country }}",
                 "addressLocality": "{{ contact.address.one().locality }}",
                 "postalCode": "{{ contact.address.one().postalCode }}",
-                "streetAddress": "{{ contact.address.one().addressLine1 }}"
+                "streetAddress": "{% if contact.address.one().addressLine2 is empty %}{{ contact.address.one().addressLine1 }}{% else %}{{ contact.address.one().addressLine2 }}{% endif %}"
             },
         {% endif %}
         {% if contact.email %}
